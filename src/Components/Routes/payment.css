@@ -1,0 +1,22 @@
+
+.body {
+    position: static;
+    text-align: center;
+   
+}
+.header {
+    margin: 30px;
+}
+.title {
+    color: #ac6b36;
+}
+.info {
+    display: inline-block;
+    margin: 80px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 45px;
+    padding: 50px;
+    width: 50%;
+    
+}

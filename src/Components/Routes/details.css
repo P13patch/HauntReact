@@ -1,0 +1,49 @@
+
+.body {
+   display: inline-block;
+}
+
+.header {
+    margin: 30px;
+}
+
+.orderEditList {
+    border: solid;
+    border-width: 1px;
+    border-radius: 45px;
+    width: 600px;
+    display: block;
+    color: rgb(194, 194, 194);
+    background-color: rgba(0, 0, 0, 0.359);
+    padding-bottom: 30px;
+    margin: 40px;
+
+}
+
+.orderItems {
+    margin: 10px;
+    color: white;
+}
+.elementItem {
+    
+    display: inline-block;
+    color: rgb(174, 174, 174);
+}
+.elementAmmount {
+
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.bottom {
+    height: 50px;
+    display: inline-block;
+    margin: 50px;
+}
+.editButton {
+    position: static;
+    
+   
+   
+}
+

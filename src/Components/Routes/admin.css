@@ -1,0 +1,36 @@
+
+
+.productField {
+    position: static;
+    margin: 10px;
+    text-align: left;
+}
+
+.productList
+
+.productBox {
+    height: fit-content;
+    width: 600px;
+    background-color: grey;
+    border: solid;
+    border-width: 1px;
+    margin: auto;
+    padding: 5px;
+}
+
+.productItem {
+    color: white;
+    margin-left: 10px;
+}
+
+.productAmmount {
+    margin-left: 200px;
+}
+
+.deleteIcon {
+    position: relative;
+    display: inline-block;
+    left: 1000px;
+    bottom: 50px;
+    
+}

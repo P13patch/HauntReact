@@ -1,0 +1,161 @@
+
+.body {
+  display: block;
+  height: fit-content;
+}
+
+.header {
+  margin: 30px;
+}
+
+
+.containerA {
+  
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #ac6b36;
+}
+
+
+.containerB {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background-color: inherit;
+  }
+
+  /* Control the left side */
+  .splitleft {
+  
+  display: inline-block;
+  height: fit-content;
+  width: 50%;
+  margin: 70px;
+  z-index: 1;
+    
+  overflow-x: hidden;
+  
+  
+  }
+
+  /* Control the right side */
+  .splitright {
+  display: inline-block;
+  height: fit-content;
+  width: 50%;
+  margin: 70px;
+  z-index: 1;
+    
+  overflow-x: hidden;
+  
+  
+}
+
+/* image buttons */
+.imgcontainer {
+  position: static;
+  display: inline-flex;
+  margin-left: 50%px;
+  margin-right: 50%px;
+  border-radius: 45px;
+}
+.logo {
+  display: inline-flex;
+  height: 300px;
+  width: 500px;
+  border-radius: 45px;
+}
+
+.button {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  border-radius: 45px;
+  
+  background-color: rgba(0, 0, 0, 0.613);
+  color: white;
+  font-size: 36px;
+  outline-color: rgb(255, 89, 0);
+  
+  background-position: center;
+  transition: background 0.5s;
+}
+.button:hover {
+  background: #ffffff00 radial-gradient(circle, transparent 1%, #ffffff22 1%) center/15000%;
+}
+.button:active {
+  background-color: #00000056;
+  background-size: 100%;
+  transition: background 0s;
+  
+}
+
+
+
+/* box holding all checkmark lists */
+.listField {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: solid;
+  border-width: 1px;
+  border-color: white;
+  padding-left: 10px;
+  color: rgb(174, 174, 174);
+  background-color: rgba(0, 0, 0, 0.359);
+  text-align: left;
+  font-size: 50px;
+}
+
+.buildElementItem {
+  margin: 5px;
+  display: inline-flex;
+  position: relative;
+  width: auto;
+  
+}
+.buildElementItem:hover {
+  background-color: #ba6b2b2c;
+  border-radius: 25px;
+  width: auto;
+}
+.itemButton {
+  display: inline-flex;
+}
+
+  
+
+
+.containerC {
+  
+  display: block;
+  position: static;
+  bottom: 0;
+  
+  margin-bottom: 80px;
+
+  text-align: center;
+  
+}
+
+.modal {
+
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  
+
+  
+  height: 200px;
+  width: 400px;
+  background-color: rgb(187, 187, 187);
+  
+  
+}

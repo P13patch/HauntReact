@@ -21,8 +21,8 @@ function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
             {'Copyright © '}
-            <Link color="inherit" href="https://material-ui.com/">
-                Your Website
+            <Link className="reactLink">
+                HauntCo
       </Link>{' '}
             {new Date().getFullYear()}
             {'.'}
@@ -131,8 +131,8 @@ export default function SignUp() {
                         </Grid>
                         <Grid item xs={12}>
                             <FormControlLabel
-                                control={<Checkbox value="allowExtraEmails" color="primary" />}
-                                label="I want to receive inspiration, marketing promotions and updates via email."
+                                control={<Checkbox value="allowExtraEmails" color="secondary" />}
+                                label="I want to receive shipping notifications and product updates via email."
                             />
                         </Grid>
                     </Grid>
@@ -145,9 +145,9 @@ export default function SignUp() {
                     >
                         Sign Up
           </Button>
-                    <Grid container justify="flex-end">
+                    <Grid container justify="center">
                         <Grid item>
-                            <Link to="/SignIn" href="#" variant="body2">
+                            <Link to="/SignIn" className="reactLink">
                                 Already have an account? Sign in
               </Link>
                         </Grid>

@@ -1,6 +1,7 @@
 
 .body {
    display: inline-block;
+   width: auto;
 }
 
 .header {
@@ -13,6 +14,7 @@
     border-radius: 45px;
     width: 600px;
     display: block;
+    
     color: rgb(194, 194, 194);
     background-color: rgba(0, 0, 0, 0.359);
     padding-bottom: 30px;

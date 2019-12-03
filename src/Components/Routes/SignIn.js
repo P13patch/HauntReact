@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import "./signin.css"
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -22,10 +23,10 @@ import { baseEndpoint, api } from '../const'
 
 function Copyright() {
     return (
-        <Typography variant="body2" color="textSecondary" align="center">
+        <Typography variant="body2" color="primary" align="center">
             {'Copyright © '}
-            <Link color="inherit" href="https://material-ui.com/">
-                Your Website
+            <Link className="reactLink" href="https://material-ui.com/">
+                HauntCo
       </Link>{' '}
             {new Date().getFullYear()}
             {'.'}
@@ -72,28 +73,28 @@ export default function SignIn() {
             body: data,
         })
             //returns token
-        .then(httpResult => {
-            return httpResult.json()
-        })
-            
-        .then(token => {
-            setContext.setToken(token)
-            setContext.setAuth(true)
-        })
-        .catch(error => {
-            console.log(error)
-        })
-        
+            .then(httpResult => {
+                return httpResult.json()
+            })
+
+            .then(token => {
+                setContext.setToken(token)
+                setContext.setAuth(true)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+
     }
 
 
     const responseGoogle = (response) => {
-        
+
         let data = {
             tokenId: response.tokenId,
-            
+
         }
-        
+
         fetch(`${baseEndpoint}${api}/user/oauth/google`, {
             method: "POST",
             body: JSON.stringify(data),
@@ -101,15 +102,15 @@ export default function SignIn() {
                 'Content-Type': 'application/json'
             }
         })
-          //returns token
-          .then(httpResult => {
-            return httpResult.json()
-        })
-            
-        .then(token => {
-            setContext.setToken(token)
-            setContext.setAuth(true)
-        })
+            //returns token
+            .then(httpResult => {
+                return httpResult.json()
+            })
+
+            .then(token => {
+                setContext.setToken(token)
+                setContext.setAuth(true)
+            })
     }
 
 
@@ -122,8 +123,8 @@ export default function SignIn() {
                 </Avatar>
                 <Typography component="h1" variant="h5">
                     Sign in
-        </Typography>
-        
+                </Typography>
+
                 <form className={classes.form} noValidate onSubmit={submitHandler}>
                     <TextField
                         variant="outlined"
@@ -159,23 +160,22 @@ export default function SignIn() {
                         className={classes.submit}
                     >
                         Sign In
-          </Button>
-          <ReactGoogleLogin
-            clientId="159189926960-ruhearc07f379bebmofjnhn0tg9rnt8c.apps.googleusercontent.com"
-            buttonText="Login"
-            onSuccess={responseGoogle}
-            onFailure={responseGoogle}
-            cookiePolicy={'single_host_origin'}
-        />
-                    <Grid container>
-                        <Grid item xs>
-                            <Link href="#" variant="body2">
-                                Forgot password?
-              </Link>
-                        </Grid>
+                    </Button>
+                    <div className="googlebutton">
+                        <ReactGoogleLogin
+                            clientId="159189926960-ruhearc07f379bebmofjnhn0tg9rnt8c.apps.googleusercontent.com"
+                            buttonText="Login"
+                            onSuccess={responseGoogle}
+                            onFailure={responseGoogle}
+                            cookiePolicy={'single_host_origin'}
+                            className="googlebutton"
+                        />
+                    </div>
+                    <Grid container justify="center">
+                        
                         <Grid item>
-                            <Link to="./SignUp" href="#" variant="body2">
-                                {"Don't have an account? Sign Up"}
+                            <Link to="./SignUp" className="reactLink">
+                                Don't have an account? Sign Up
                             </Link>
                         </Grid>
                     </Grid>

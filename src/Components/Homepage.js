@@ -5,14 +5,16 @@ import SnowImg from '../Components/Images/snow.jpg'
 import VoodooImg from '../Components/Images/voodooDoll.jpg'
 import GingerHouseImg from '../Components/Images/GingerHouse.jpg'
 import WitchBrewImg from '../Components/Images/witchBrew.jpg'
-import Pumpkin from '../Components/Images/PumpkinCarve.jpg'
+
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Button from '@material-ui/core/Button'
 
 import './Homepage.css'
 
 
 export default function Homepage() {
     return (
-        <div className="body">
+        <div className="homepagebody">
             <div className="box1">
                 <img className="houseImage" src={HouseImg} alt="Haunted House"></img>
 
@@ -47,7 +49,12 @@ export default function Homepage() {
                 <h2>We deliver products that will help make your halloween a spooky one</h2>
                 <p>Whether it is a simple spook you are looking for, or an extreme Haunt, our products will satisfy your darkest desires!</p>
                 <p>Get Started and build the perfect Haunt package for this years Halloween fun.</p>
-                
+                <Button
+                variant="contained"
+                color="secondary"
+                size="large"
+                component={Link} to="/Build"
+                >Get Started!</Button>
 
             </div>
 

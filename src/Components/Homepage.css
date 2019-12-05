@@ -2,7 +2,7 @@
     position: static;
     
     overflow: scroll;
-    width: fill;
+    width: stretch;
 }
 .body .scrollbar-track {
     visibility: hidden;

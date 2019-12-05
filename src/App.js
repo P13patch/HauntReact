@@ -1,12 +1,10 @@
 import React from 'react';
-import './App.css';
-import ButtonAppBar from './Components/AppBar'
-import { createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
-
-
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { AuthProvider } from './Components/Routes/AuthContext'
+
+import './App.css';
+
+import ButtonAppBar from './Components/AppBar'
 import ProtectedRoute from './Components/Routes/ProtectedRoute'
 import Homepage from './Components/Homepage'
 import Admin from './Components/Routes/Admin'
@@ -15,6 +13,14 @@ import SignUp from './Components/Routes/SignUp'
 import Build from "./Components/Routes/Build"
 import Details from "./Components/Routes/Details"
 import Payment from "./Components/Routes/Payment"
+
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+
+
+
+
+
 
 const theme = createMuiTheme({
   palette: {

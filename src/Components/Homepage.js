@@ -1,4 +1,8 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import './Homepage.css'
+
 import HouseImg from '../Components/Images/houseimg.jpg'
 import House2Img from '../Components/Images/winterhouse.jpg'
 import SnowImg from '../Components/Images/snow.jpg'
@@ -6,10 +10,10 @@ import VoodooImg from '../Components/Images/voodooDoll.jpg'
 import GingerHouseImg from '../Components/Images/GingerHouse.jpg'
 import WitchBrewImg from '../Components/Images/witchBrew.jpg'
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Button from '@material-ui/core/Button'
 
-import './Homepage.css'
+import { Button } from "./const"
+
+
 
 
 export default function Homepage() {

@@ -1,16 +1,11 @@
 import React, { Component, useEffect } from 'react'
-import './details.css'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { baseEndpoint, api } from '../const'
 
-import PopUp from "./EditPopup"
-import Button from '@material-ui/core/Button'
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import EditIcon from '@material-ui/icons/Edit';
+import './details.css'
+
+import { baseEndpoint, api, Button, IconButton, Typography } from '../const'
 import HighlightOffSharpIcon from '@material-ui/icons/HighlightOffSharp';
 
-//const orderEndpoint = 'https://localhost:3000/api/v1/order'
 
 export default function Details() {
 
@@ -111,7 +106,6 @@ export default function Details() {
                                 {(editMode ?
                                     <span>
 
-                                        <PopUp></PopUp>
                                         <IconButton onClick={deleteClickHandler(element.productId)}>
                                             <HighlightOffSharpIcon
                                                 color="secondary"

@@ -1,7 +1,7 @@
 
 .googlebutton {
    
-    width: fill;
+    width: stretch;
     justify-content: center;
     margin-bottom: 20px;
 }

@@ -1,10 +1,8 @@
 import React, { Component, useEffect, useContext } from 'react';
+
 import './admin.css'
 
-import IconButton from '@material-ui/core/IconButton';
-import HighlightOffSharpIcon from '@material-ui/icons/HighlightOffSharp';
-import { AuthContext } from './AuthContext'
-import { baseEndpoint, api } from '../const'
+import { baseEndpoint, api, IconButton, HighlightOffSharpIcon } from '../const'
 
 
 export default function Admin() {

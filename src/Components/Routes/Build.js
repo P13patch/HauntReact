@@ -1,26 +1,19 @@
 import React, { useEffect, useContext } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { AuthContext } from './AuthContext'
+
+import './build.css';
 
 import logo1 from "/Documents/Projects/Hauntings/hauntreact/src/Components/Routes/simplehaunt.jpg"
 import logo2 from "/Documents/Projects/Hauntings/hauntreact/src/Components/Routes/extremehaunt.jpg"
-import './build.css';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-import { AuthContext } from './AuthContext'
-import { baseEndpoint, api } from '../const'
 
 import { makeStyles } from '@material-ui/core/styles';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
+
+import { baseEndpoint, api, Button, IconButton, Typography, Checkbox, FormControlLabel, FormGroup } from '../const'
 import Modal from '@material-ui/core/Modal';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
 import MoreIcon from '@material-ui/icons/More';
 
 
-//const productEndpoint = 'https://localhost:3000/api/v1/product'
-//const orderEndpoint = 'https://localhost:3000/api/v1/order'
 
 
 function getModalStyle() {

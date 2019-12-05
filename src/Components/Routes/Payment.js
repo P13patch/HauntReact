@@ -2,12 +2,8 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./payment.css"
 
-import Button from '@material-ui/core/Button'
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
-import TextField from '@material-ui/core/TextField';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
+
+import { Button, Grid, Typography, TextField, Checkbox, FormControlLabel } from '../const'
 
 
 function Payment() {
@@ -56,7 +52,7 @@ function Payment() {
                         </Grid>
                     </Grid>
                 </div>
-                <div>
+                <div className="submitbutton">
                 <Button color="secondary" variant="contained">Submit Payment</Button>
                 </div>
             </body>

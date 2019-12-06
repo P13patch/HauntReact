@@ -2,13 +2,13 @@ import React, { Component, useEffect, useContext } from 'react';
 
 import './admin.css'
 
-import { baseEndpoint, api, IconButton, HighlightOffSharpIcon } from '../const'
+import { baseEndpoint, api, Button } from '../const'
 
 
 export default function Admin() {
 
     const [product, setProduct] = React.useState([])
-    
+
     //let { token, setToken } = useContext(AuthContext)
 
     const refreshPage = () => {
@@ -23,16 +23,23 @@ export default function Admin() {
             })
     }
 
-    
+
     const deleteClickHandler = id => event => {
         console.log(`*${id}*`)
-        
+
         fetch(`${baseEndpoint}${api}/product/${id}`,
-        {
-            method: 'DELETE',
-            
-        })
-        
+            {
+                method: 'DELETE',
+
+            })
+            .then(result => {
+                if (result.statusText === "OK") {
+                    refreshPage()
+                }
+            }
+
+            )
+
     }
 
 
@@ -56,12 +63,13 @@ export default function Admin() {
 
 
                                         <div className="productDescription">{item.description}</div>
+
+                                        <span className="deletebutton">
+                                            <Button onClick={deleteClickHandler(item._id)}>
+                                                Delete Item
+                                        </Button>
+                                        </span>
                                     </div>
-                                    <span className="deleteIcon">
-                                        <IconButton onClick={deleteClickHandler(item._id)}>
-                                            <HighlightOffSharpIcon color="secondary"></HighlightOffSharpIcon>
-                                        </IconButton>
-                                    </span>
                                 </div>
                             </div>
 

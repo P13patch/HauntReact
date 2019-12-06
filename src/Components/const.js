@@ -13,8 +13,8 @@ import HighlightOffSharpIcon from '@material-ui/icons/HighlightOffSharp';
 
 
 
-const baseEndpoint = 'https://hauntco.herokuapp.com'
-//const baseEndpoint = 'http://localhost:3000'
+//const baseEndpoint = 'https://hauntco.herokuapp.com'
+const baseEndpoint = 'http://localhost:3000'
 const api = '/api/v1'
 
 

@@ -6,15 +6,13 @@
     text-align: left;
 }
 
-.productList
-
 .productBox {
     height: fit-content;
     width: 600px;
     background-color: grey;
     border: solid;
     border-width: 1px;
-    margin: auto;
+    margin: 20px;
     padding: 5px;
 }
 
@@ -24,13 +22,14 @@
 }
 
 .productAmmount {
-    margin-left: 200px;
+    float: right;
+    margin: 5px;
 }
 
 .deleteIcon {
     position: relative;
     display: inline-block;
-    left: 1000px;
-    bottom: 50px;
+    left: 10px;
+    bottom: -10px;
     
 }

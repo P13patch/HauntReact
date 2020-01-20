@@ -76,7 +76,7 @@ export default function Build() {
     })
 
     if (product !== undefined) {
-      console.log(product)
+      
       setName(product.item)
       setAmmount(product.ammount)
       setDescription(product.description)
@@ -291,6 +291,7 @@ export default function Build() {
                 <h2 id="simple-modal-title">{name}</h2>
                 <p id="simple-modal-description">
                   <div>{ammount}</div>
+                  <br></br>
                   <div>{description}</div>
                 </p>
               </div>

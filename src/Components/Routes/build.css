@@ -129,6 +129,7 @@
   display: inline-flex;
 }
 
+
   
 
 
@@ -144,18 +145,3 @@
   
 }
 
-.modal {
-
-  position: absolute;
-  float: left;
-  left: 50%;
-  top: 50%;
-  
-
-  
-  height: 200px;
-  width: 400px;
-  background-color: rgb(187, 187, 187);
-  
-  
-}
